@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRUPO VICTOR MUSIC PERÚ 
+     DE RADIOS ONLINE</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: transparent;
+        }
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+        .video-background video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .contenido-cuadro {
+            position: relative;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .portada {
+            padding: 20px;
+            text-align: center;
+        }
+        .portada h1 {
+            background: none;
+        }
+        .contenido {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            gap: 20px;
+        }
+        .reproductor,
+        .perfil-facebook {
+            border: 1px solid #ccc;
+            width: 100%;
+            max-width: 350px;
+            height: 648px;
+            padding: 10px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        .reproductor {
+            border-color: #ccc;
+        }
+        .perfil-facebook {
+            border-color: #ccc;
+        }
+        .creditos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(248, 249, 250, 0.9);
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+        .creditos p {
+            margin: 0;
+        }
+        .creditos .redes-sociales {
+            display: flex; /* Para alinear los íconos en línea */
+            gap: 10px; /* Espacio entre los íconos */
+        }
+        .redes-sociales a {
+            display: inline-block;
+            transition: transform 0.3s ease-out, color 0.3s ease-out;
+        }
+        .redes-sociales a:hover {
+            transform: scale(1.2); /* Cambia el tamaño al pasar el mouse */
+            color: #007bff; /* Cambia el color al pasar el mouse */
+        }
+        .redes-sociales img {
+            width: 30px; /* Ajusta el tamaño según tus necesidades */
+            height: auto;
+            cursor: pointer;
+        }
+        @media(min-width: 768px) {
+            .contenido {
+                flex-direction: row;
+                justify-content: center;
+            }
+        }
+        .sheetSlider {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .sh__content {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .sh__item {
+            min-width: 100%;
+        }
+        .sh__item img {
+            width: 100%;
+            height: auto;
+        }
+        input[name="slide1"] {
+            display: none;
+        }
+        @keyframes sliderAnimation {
+            0% { transform: translateX(0); }
+            33.33% { transform: translateX(-100%); }
+            66.66% { transform: translateX(-200%); }
+            100% { transform: translateX(0); }
+        }
+        input#s1:checked ~ .sh__content {
+            animation: sliderAnimation 10s infinite;
+        }
+        input#s2:checked ~ .sh__content {
+            animation: sliderAnimation 10s infinite 3.33s;
+        }
+        input#s3:checked ~ .sh__content {
+            animation: sliderAnimation 10s infinite 6.66s;
+        }
+    </style>
+</head>
+<body oncontextmenu="return false;">
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="https://i.imgur.com/tOc9a3A.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="contenido-cuadro">
+        <div class="portada">
+           
+            <div class='sheetSlider sh-default sh-auto'>
+                <input checked='checked' id='s1' name='slide1' type='radio'/> 
+                <input id='s2' name='slide1' type='radio'/>
+                <input id='s3' name='slide1' type='radio'/> 
+                <div class='sh__content'>
+                    <div class='sh__item'>
+                        <img alt='imgText' src='https://imgur.com/lcmxop5.png'/>
+                    </div>
+                    <div class='sh__item'>
+                        <img alt='imgText' src='https://imgur.com/lcmxop5.png'/>
+                    </div>
+                    <div class='sh__item'>
+                        <img alt='imgText' src='https://imgur.com/lcmxop5.png'/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contenido">
+            <div class="reproductor">
+                <iframe src="https://vmzambrano.github.io/" width="100%" height="100%" frameborder="0"></iframe>
+            </div>
+            <div class="perfil-facebook">
+               <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fvictormusicperu&tabs=timeline&width=330&height=636&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true&appId" width="330" height="636" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </div>
+        </div>
+
+
+
+         <div style='padding-right:10px;padding-top:10px;padding-left:10px'>
+<a href='https://play.google.com/store/apps/details?id=com.live1radiovictormusic.radio'><img src='https://1.bp.blogspot.com/-lxl6ExCyiYg/YUOPJKsdl6I/AAAAAAAAAB8/zvq4vjanj-oX_lcA--3V5vqa-3NwDkdGwCLcBGAsYHQ/s0/APP.png' width='100%'/></a>
+</div>
+        <div class="creditos">
+            <p>&copy; Grupo Victor Music Perú - Desarrollado Por <a href="https://api.whatsapp.com/send?phone=51912985640" rel="noopener noreferrer nofollow" target="_blank" property="cc:attributionName">SISTEMAS SUREÑOS</a></p>
+            <!-- Iconos de redes sociales en PNG debajo -->
+            <div class="redes-sociales">
+                <a href="https://twitter.com/vm_zambrano" target="_blank" rel="noopener noreferrer"><img src="https://cdn-icons-png.flaticon.com/512/5969/5969020.png" alt="Twitter"></a>
+                <a href="https://www.facebook.com/victormusicperu" target="_blank" rel="noopener noreferrer"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" alt="Facebook"></a>
+                <a href="https://instagram.com/vm_zambrano" target="_blank" rel="noopener noreferrer"><img src="https://cdn-icons-png.flaticon.com/512/3955/3955024.png" alt="Instagram"></a>
+                <a href="https://www.tiktok.com/@vm_zambrano" target="_blank" rel="noopener noreferrer"><img src="https://cdn-icons-png.flaticon.com/512/4782/4782345.png" alt="tiktok"></a>
+                <a href="https://api.whatsapp.com/send?phone=51912985640" target="_blank" rel="noopener noreferrer"><img src="https://cdn-icons-png.flaticon.com/512/3670/3670051.png" alt="tiktok"></a>
+                <a href="https://www.youtube.com/channel/UCAsEdFej4Zmo5yDR0b5247A" target="_blank" rel="noopener noreferrer"><img src="https://cdn-icons-png.flaticon.com/512/14449/14449776.png" alt="tiktok"></a>
+            </div>
+        </div>
+    </div>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v11.0" nonce="V8u12F3r"></script>
+</body>
+</html>
