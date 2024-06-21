@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://vjs.zencdn.net/7.14.3/video-js.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    
+    #my-video {
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+  </style>
+  <script src="https://vjs.zencdn.net/7.14.3/video.js"></script>
+</head>
+<body>
+
+<video id="my-video" class="video-js" controls preload="auto" autoplay data-setup='{}'>
+  <source src="https://live-evg1.tv360.bitel.com.pe/bitel/vmlatino/bitel/vmlatino_original_480p/chunks.m3u8?uid=3637932" type="application/x-mpegURL">
+  Tu navegador no soporta el formato de video.
+</video>
+
+</body>
+</html>
